@@ -7,7 +7,7 @@ export default function HomePage() {
     <Container>
       <Grid container spacing={2}>
         {
-          [...gyms, ...gyms, ...gyms, ...gyms].map((gym, i) => (
+          [...gyms, ...gyms, ...gyms, ...gyms, ...gyms, ...gyms, ...gyms, ...gyms, ...gyms, ...gyms].map((gym, i) => (
             <Grid key={`gym-${gym.id}-${i}`} item xs={12} sm={6} md={4}>
               <MediaCard gym={gym} />
             </Grid>

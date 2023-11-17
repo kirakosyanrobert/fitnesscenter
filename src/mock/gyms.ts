@@ -16,7 +16,7 @@ export const gyms: Gym[] = [
     description: 'Gym | Boxing Workouts | Fitness Bar | Sauna',
     instagramNick: 'neogym.armenia',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: '/images/neogym.jpg',
+    instagramUrl: 'images/neogym.jpg',
   },
   {
     id: '2',
@@ -25,7 +25,7 @@ export const gyms: Gym[] = [
     description: '',
     instagramNick: 'powergympremiumclub',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: '/images/powergym.jpg',
+    instagramUrl: 'images/powergym.jpg',
   },
   {
     id: '3',
@@ -34,6 +34,39 @@ export const gyms: Gym[] = [
     description: '',
     instagramNick: 'actionfitnessyerevan',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: '/images/actionfitness.jpg',
+    instagramUrl: 'images/actionfitness.jpg',
   },
-]
+  {
+    id: '4',
+    name: 'Tutunjian Team',
+    bio: '',
+    description: '',
+    instagramNick: 'tutunjianfitness',
+    instagramAccountType: 'Gym/Physical Fitness Center',
+    instagramUrl: 'images/tutunjianfitness.jpg',
+  },
+  {
+    id: '5',
+    name: 'The ONE Gym',
+    bio: '',
+    description: '',
+    instagramNick: 'theone.gym',
+    instagramAccountType: 'Gym/Physical Fitness Center',
+    instagramUrl: 'images/theonegym.jpg',
+  },
+  {
+    id: '6',
+    name: 'Orange Premium Fitness Club',
+    bio: '',
+    description: '',
+    instagramNick: 'orangefityerevan',
+    instagramAccountType: 'Gym/Physical Fitness Center',
+    instagramUrl: 'images/orangefityerevan.jpg',
+  },
+];
+
+
+
+
+
+
