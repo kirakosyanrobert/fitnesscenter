@@ -13,7 +13,7 @@ import { Link as MuiLink } from '@mui/material';
 export default function MediaCard({gym}: {gym: Gym}) {
   const { name, instagramNick, instagramUrl } = gym;
   return (
-    <Card>
+    <Card variant="outlined">
       <Box display="flex" justifyContent="center" py={1}>
         <Image
           alt={name}

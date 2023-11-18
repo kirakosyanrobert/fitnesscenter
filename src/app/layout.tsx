@@ -8,8 +8,8 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry';
 
 export const metadata = {
-  title: 'Next.js App Router + Material UI v5',
-  description: 'Next.js App Router + Material UI v5',
+  title: 'FitnessCenter',
+  description: 'FitnessCenter',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               flexGrow: 1,
               bgcolor: 'background.default',
               mt: ['48px', '56px', '64px'],
-              py: [2, 3, 3],
+              pb: [2, 3, 3],
             }}
           >
             {children}

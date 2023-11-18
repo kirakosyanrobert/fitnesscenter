@@ -1,0 +1,2 @@
+export { GymDetails } from './GymDetails'
+
