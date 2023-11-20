@@ -3,9 +3,16 @@ import { Box, Typography, styled } from '@mui/material';
 import { gyms } from '@/mock/gyms';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import { PartnerCard } from './PartnerCard';
+
+const StyledSwiper = styled(Swiper)({
+  '& .swiper-wrapper': {
+    marginBottom: 40,
+  }
+});
 
 const StyledSwiperSlide = styled(SwiperSlide)({})
 
@@ -16,10 +23,12 @@ export const Partners = () => {
         Partners
       </Typography>
       <Box>
-        <Swiper
+        <StyledSwiper
           loop
           slidesPerView={2}
           spaceBetween={16}
+          pagination={true} 
+          modules={[Pagination]}
           breakpoints={{
             600: {
               slidesPerView: 3,
@@ -39,7 +48,7 @@ export const Partners = () => {
               </StyledSwiperSlide>
             ))
           }
-      </Swiper>
+      </StyledSwiper>
     </Box>
     </Box>
   );

@@ -4,9 +4,17 @@ import MediaCard from '@/components/MediaCard';
 import { gyms } from '@/mock/gyms';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-const StyledSwiperSlide = styled(SwiperSlide)({})
+const StyledSwiper = styled(Swiper)({
+  '& .swiper-wrapper': {
+    marginBottom: 40,
+  }
+});
+
+const StyledSwiperSlide = styled(SwiperSlide)({});
 
 export const Testimonials = () => {
   return (
@@ -15,10 +23,12 @@ export const Testimonials = () => {
         Testimonials
       </Typography>
       <Box>
-        <Swiper
+        <StyledSwiper
           loop
           slidesPerView={1}
           spaceBetween={16}
+          pagination={true} 
+          modules={[Pagination]}
           breakpoints={{
             600: {
               slidesPerView: 2,
@@ -35,7 +45,7 @@ export const Testimonials = () => {
               </StyledSwiperSlide>
             ))
           }
-      </Swiper>
+      </StyledSwiper>
     </Box>
     </Box>
   );
