@@ -9,15 +9,16 @@ import Typography from '@mui/material/Typography';
 import { Gym } from '@/mock/gyms';
 import { Box } from '@mui/material';
 import { Link as MuiLink } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 export default function MediaCard({gym}: {gym: Gym}) {
-  const { name, instagramNick, instagramUrl } = gym;
+  const { name, instagramNick, imageUrl } = gym;
   return (
     <Card variant="outlined">
       <Box display="flex" justifyContent="center" py={1}>
         <Image
           alt={name}
-          src={instagramUrl || ''}
+          src={imageUrl || ''}
           width={112}
           height={112}
           style={{
@@ -30,7 +31,7 @@ export default function MediaCard({gym}: {gym: Gym}) {
         />
       </Box>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="h5" textAlign="center">
+        <Typography gutterBottom variant="h5" component="h5" textAlign="center" noWrap>
           {name}
         </Typography>
         <Box display="flex" justifyContent="center">
@@ -38,10 +39,10 @@ export default function MediaCard({gym}: {gym: Gym}) {
             href={`https://www.instagram.com/${instagramNick}/`} 
             target="_blank"
             variant="body2"
-            color="text.secondary"
-            sx={{ textDecoration: 'none' }}
+            sx={{ textDecoration: 'none', display: 'flex', gap: 1 }}
           >
             @{instagramNick}
+            <OpenInNewIcon fontSize="small" />
           </MuiLink>
         </Box>
       </CardContent>

@@ -12,10 +12,9 @@ const StyledSwiperSlide = styled(SwiperSlide)({
 
 export const Banner = () => {
   const slides = [
-    {url: 'images/homeBanner/banner1.jpg', alt: 'Banner image 1' },
-    {url: 'images/homeBanner/banner2.jpg', alt: 'Banner image 2' },
-    {url: 'images/homeBanner/banner3.jpg', alt: 'Banner image 3' },
-    {url: 'images/homeBanner/banner4.jpg', alt: 'Banner image 4' },
+    {url: 'images/homeBanner/banner1.webp', alt: 'Banner image 1' },
+    {url: 'images/homeBanner/banner2.webp', alt: 'Banner image 2' },
+    {url: 'images/homeBanner/banner3.webp', alt: 'Banner image 3' },
   ];
 
   return (

@@ -6,13 +6,13 @@ import { Box } from '@mui/material';
 import { Link as MuiLink } from '@mui/material';
 
 export const PartnerCard = ({gym}: {gym: Gym}) => {
-  const { name, instagramNick, instagramUrl } = gym;
+  const { name, instagramNick, imageUrl } = gym;
   return (
     <Card variant="outlined">
       <Box display="flex" justifyContent="center" py={1}>
         <Image
           alt={name}
-          src={instagramUrl || ''}
+          src={imageUrl || ''}
           width={104}
           height={104}
           style={{

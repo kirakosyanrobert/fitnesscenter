@@ -5,7 +5,7 @@ export type Gym = {
   description?: string;
   instagramNick?: string;
   instagramAccountType?: string;
-  instagramUrl?: string;
+  imageUrl?: string;
 }
 
 export const gyms: Gym[] = [
@@ -16,7 +16,7 @@ export const gyms: Gym[] = [
     description: 'Gym | Boxing Workouts | Fitness Bar | Sauna',
     instagramNick: 'neogym.armenia',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: 'images/neogym.jpg',
+    imageUrl: 'images/neogym.jpg',
   },
   {
     id: '2',
@@ -25,7 +25,7 @@ export const gyms: Gym[] = [
     description: '',
     instagramNick: 'powergympremiumclub',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: 'images/powergym.jpg',
+    imageUrl: 'images/powergym.jpg',
   },
   {
     id: '3',
@@ -34,7 +34,7 @@ export const gyms: Gym[] = [
     description: '',
     instagramNick: 'actionfitnessyerevan',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: 'images/actionfitness.jpg',
+    imageUrl: 'images/actionfitness.jpg',
   },
   {
     id: '4',
@@ -43,7 +43,7 @@ export const gyms: Gym[] = [
     description: '',
     instagramNick: 'tutunjianfitness',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: 'images/tutunjianfitness.jpg',
+    imageUrl: 'images/tutunjianfitness.jpg',
   },
   {
     id: '5',
@@ -52,7 +52,7 @@ export const gyms: Gym[] = [
     description: '',
     instagramNick: 'theone.gym',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: 'images/theonegym.jpg',
+    imageUrl: 'images/theonegym.jpg',
   },
   {
     id: '6',
@@ -61,7 +61,7 @@ export const gyms: Gym[] = [
     description: '',
     instagramNick: 'orangefityerevan',
     instagramAccountType: 'Gym/Physical Fitness Center',
-    instagramUrl: 'images/orangefityerevan.jpg',
+    imageUrl: 'images/orangefityerevan.jpg',
   },
 ];
 
