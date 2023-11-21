@@ -1,20 +1,20 @@
 import Link from 'next/link';
 import { Box, Button, Grid, Typography } from '@mui/material';
-import MediaCard from '@/components/MediaCard';
-import { gyms } from '@/mock/gyms';
 import { localRoutes } from '@/consts';
+import { CoachCard } from '@/shared';
+import { coaches } from '@/mock/coaches';
 
-export const Popular = () => {
+export const CoachesSection = () => {
   return (
     <Box>
       <Typography variant="h3" textAlign="center" mt={6} mb={3}>
-        Popular
+        Coaches
       </Typography>
       <Grid container spacing={2} px={2}>
         {
-          [...gyms].map((gym, i) => (
-            <Grid key={`gym-${gym.id}-${i}`} item xs={12} sm={6} md={4}>
-              <MediaCard gym={gym} />
+          [...coaches, ...coaches, ...coaches].slice(0, 8).map((coach, i) => (
+            <Grid key={`coach-${coach.id}-${i}`} item xs={12} sm={6} md={4} lg={3}>
+              <CoachCard coach={coach} />
             </Grid>
           ))
         }
@@ -22,7 +22,7 @@ export const Popular = () => {
       <Box display="flex" justifyContent="center" pt={3}>
         <Button
           component={Link}
-          href={localRoutes.catalog}
+          href={localRoutes.coaches}
           variant="outlined"
           size="large"
         >

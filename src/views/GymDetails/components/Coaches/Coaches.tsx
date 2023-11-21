@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { CoachCard } from './CoachCard';
+import { CoachCard } from '@/shared/CoachCard';
 import { coaches } from '@/mock/coaches';
 
 const StyledSwiper = styled(Swiper)({
@@ -35,6 +35,9 @@ export const Coaches = () => {
             },
             900: {
               slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 4,
             },
           }}
         >
