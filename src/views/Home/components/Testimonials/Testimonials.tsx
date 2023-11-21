@@ -4,7 +4,7 @@ import MediaCard from '@/components/MediaCard';
 import { gyms } from '@/mock/gyms';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -28,13 +28,11 @@ export const Testimonials = () => {
           slidesPerView={1}
           spaceBetween={16}
           pagination={true} 
-          modules={[Pagination]}
+          autoplay
+          modules={[Pagination, Autoplay]}
           breakpoints={{
             600: {
               slidesPerView: 2,
-            },
-            900: {
-              slidesPerView: 3,
             },
           }}
         >

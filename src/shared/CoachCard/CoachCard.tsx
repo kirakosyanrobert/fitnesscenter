@@ -13,18 +13,16 @@ export const CoachCard = ({coach}: {coach: Coach}) => {
 
   return (
     <Card variant="outlined">
-      <Box display="flex" justifyContent="center" py={1}>
+      <Box display="flex">
         <Image
           alt={name}
           src={imageUrl || ''}
           width={240}
           height={240}
           style={{
-            maxWidth: '100%',
-            height: '240px',
-            width: '240px',
+            height: '100%',
+            width: '100%',
             objectFit: 'contain',
-            borderRadius: '100%'
           }}
         />
       </Box>
